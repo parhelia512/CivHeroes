@@ -1037,7 +1037,7 @@ namespace CardManager
         {
             LoadCardFormatsFromFile("Assets\\cardformats.txt");
             LoadCardRacesFromFile("Assets\\cardraces.txt");
-            LoadCardAttributesFromFile("assets\\cardattributes.txt");
+            LoadCardAttributesFromFile("Assets\\cardattributes.txt");
             LoadExpansionCbdList(AppDomain.CurrentDomain.BaseDirectory + "\\expansions");
             for (int i = 1; i <= 13; i++)
                 Level.Items.Add("★" + i);
@@ -1093,7 +1093,7 @@ namespace CardManager
             var reader = new StreamReader(File.OpenRead(filedir));
             while (!reader.EndOfStream)
             {
-                //!setcode 0x8d Ghostrick
+                
                 string line = reader.ReadLine();
                 if (line == null || !line.StartsWith("!setcode")) continue;
                 string[] parts = line.Split(' ');
