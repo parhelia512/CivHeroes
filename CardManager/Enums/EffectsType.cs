@@ -13,7 +13,7 @@ namespace CardManager.Enums
     {
         Unvulnerable = 0,
         Spsummon = 1,
-        Draw = 2
+        Draw = 2,
 		Negate = 3
     }
 }

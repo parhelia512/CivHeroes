@@ -961,9 +961,9 @@ int bufferevent_get_max_single_write(struct bufferevent *bev);
    @{
  */
 EVENT2_EXPORT_SYMBOL
-ev_ssize_t bufferevent_get_read_limit(struct bufferevent *bev);
+int bufferevent_get_read_limit(struct bufferevent *bev);
 EVENT2_EXPORT_SYMBOL
-ev_ssize_t bufferevent_get_write_limit(struct bufferevent *bev);
+int bufferevent_get_write_limit(struct bufferevent *bev);
 /*@}*/
 
 EVENT2_EXPORT_SYMBOL
